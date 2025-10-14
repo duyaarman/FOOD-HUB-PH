@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Food Hub PH</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav-bar">
+      <div class="nav-left">
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger">
+          ☰
+        </button>
+
+        <nav>
+          <ul id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <span class="logo-text">Food Hub</span>
+        <img src="Images/logo.jpg" alt="Food Hub Logo" class="nav-logo">
+      </div>
+    </div>
+  </header>
+
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Whether you have a question about our food, want to collaborate, or simply want to share your favorite Filipino dish, don’t hesitate to reach out.</p>
+    <img src="Images/location.jpg" alt="Map" class="map"/>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +63 912 345 6789</p>
+      <p><strong>Email:</strong> contact@foodhub.ph</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Food Hub PH. All rights reserved.<br/>
+    Bringing the flavors of the Philippines to your table.</p>
+  </footer>
+  <!-- JS -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

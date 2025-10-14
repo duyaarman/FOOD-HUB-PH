@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Food Hub PH</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-bar">
+      <div class="nav-left">
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger">
+          ☰
+        </button>
+
+        <nav>
+          <ul id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <span class="logo-text">Food Hub</span>
+        <img src="Images/logo.jpg" alt="Food Hub Logo" class="nav-logo">
+      </div>
+    </div>
+  </header>
+
+  <!-- Orange Banner -->
+  <section class="orange-banner">
+    <h2>Food Hub Philippines!</h2>
+    <p>Sharing the authentic taste of the Philippines, one dish at a time.</p>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-boxes">
+      <div>
+        <p>At Food Hub PH, we're passionate about Filipino food. Our goal is to bring people together through shared meals and memories.</p>
+      </div>
+      <div>
+        <p>Founded with the belief that food is a bridge to culture, we highlight traditional recipes and celebrate the diversity of our country's food heritage.</p>
+      </div>
+      <div>
+        <p>Whether you're discovering Filipino cuisine for the first time or reconnecting with your roots, Food Hub PH is your home for all things Filipino food.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="info-section">
+    <h2>Our Mission & Vision</h2>
+    <div class="info-boxes">
+      <div>
+        <h3>Mission</h3>
+        <p>To promote Filipino culinary heritage, inspire food lovers, and create meaningful connections through traditional and modern Filipino cuisine.</p>
+      </div>
+      <div>
+        <h3>Vision</h3>
+        <p>To be the leading online hub for authentic Filipino food experiences, bringing the flavors of the Philippines to tables worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story / History -->
+  <section class="info-section">
+    <h2>Our Story</h2>
+    <p>Food Hub PH started as a small passion project to document family recipes and share them online. Over the years, it has grown into a vibrant community of Filipino food enthusiasts, connecting people through shared love for our diverse culinary heritage. From classic home-cooked meals to festive delicacies, we celebrate every dish and its story.</p>
+    <p>Our goal is simple: to keep Filipino flavors alive, inspire new generations, and make everyone feel at home at our table.</p>
+  </section>
+
+  <!-- Our Values -->
+  <section class="info-section">
+    <h2>Our Values</h2>
+    <div class="info-boxes">
+      <div>
+        <h3>Authenticity</h3>
+        <p>We honor traditional Filipino recipes and ingredients to preserve the true flavors of our culture.</p>
+      </div>
+      <div>
+        <h3>Community</h3>
+        <p>Food brings people together, and we strive to build a supportive and inclusive culinary community.</p>
+      </div>
+      <div>
+        <h3>Innovation</h3>
+        <p>We explore creative ways to present Filipino cuisine while respecting its roots.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="info-section">
+    <h2>Why Choose Food Hub PH?</h2>
+    <ul style="padding-left: 1.5rem; margin-top: 1rem; line-height: 1.6; text-align: center;">
+      <li>Extensive collection of authentic Filipino recipes and cooking guides.</li>
+      <li>Curated content that connects food with Filipino culture and traditions.</li>
+      <li>User-friendly platform suitable for beginners and experienced cooks alike.</li>
+      <li>Focus on high-quality images and detailed step-by-step instructions.</li>
+      <li>Community-driven, welcoming food enthusiasts from all over the world.</li>
+    </ul>
+  </section>
+
+  <!-- Our Approach -->
+  <section class="info-section">
+    <h2>Our Approach</h2>
+    <p>We combine storytelling, culture, and cuisine to provide an immersive Filipino food experience. Every recipe we share is carefully tested, documented, and paired with tips and background information so our readers can cook with confidence and learn about the culture behind each dish.</p>
+    <p><strong>We believe that cooking is not just about ingredients—it's about connection, heritage, and joy. At Food Hub PH, every dish tells a story.</strong></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Food Hub PH. All rights reserved.<br/>
+    Bringing the flavors of the Philippines to your table.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

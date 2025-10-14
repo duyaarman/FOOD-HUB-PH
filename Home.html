@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Food Hub PH</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav-bar">
+      <div class="nav-left">
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger">
+          ☰
+        </button>
+
+        <nav>
+          <ul id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <span class="logo-text">Food Hub</span>
+        <img src="Images/logo.jpg" alt="Food Hub Logo" class="nav-logo">
+      </div>
+    </div>
+  </header>
+
+  <section class="orange-banner">
+    <div class="hero-text">
+      <h1>Welcome to Food Hub PH</h1>
+      <p>Discover the authentic flavors of the Philippines.</p>
+      <span>Experience the rich culinary heritage that brings family together.</span>
+    </div>
+    <div class="images">
+      <img src="Images/adobo.webp" alt="Adobo"/>
+      <img src="Images/bulalo.webp" alt="Bulalo"/>
+      <img src="Images/Kare-Kare-Filipino-food.jpg" alt="Kare-Kare"/>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h2>About Food Hub PH</h2>
+    <p>Food Hub PH is dedicated to celebrating the diverse flavors of Filipino cuisine. From classic favorites like Adobo and Sinigang to regional specialties, we bring authentic dishes straight to your table.</p>
+    <p>Our mission is to educate, inspire, and unite people through the joy of food. Every dish tells a story of culture, tradition, and family.</p>
+  </section>
+
+  <section class="info-section">
+    <h2>Why Choose Us?</h2>
+    <div class="info-boxes">
+      <div>
+        <h3>Authentic Recipes</h3>
+        <p>All our dishes are based on traditional Filipino recipes, carefully curated for true flavor.</p>
+      </div>
+      <div>
+        <h3>Easy to Follow</h3>
+        <p>Step-by-step cooking instructions make it easy for anyone to recreate Filipino classics at home.</p>
+      </div>
+      <div>
+        <h3>Diverse Flavors</h3>
+        <p>From savory stews to sweet desserts, we showcase the wide variety of dishes from all regions of the Philippines.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="food-section">
+    <h2>Featured Dishes</h2>
+    <div class="food-gallery">
+      <div class="dish">
+        <img src="Images/adobo.webp" alt="Adobo">
+        <h3>Adobo</h3>
+        <p>Classic Filipino stew with tender meat marinated in soy sauce, vinegar, and garlic.</p>
+      </div>
+      <div class="dish">
+        <img src="Images/bulalo.webp" alt="Bulalo">
+        <h3>Bulalo</h3>
+        <p>Hearty beef shank soup cooked until tender, served with corn and vegetables.</p>
+      </div>
+      <div class="dish">
+        <img src="Images/Kare-Kare-Filipino-food.jpg" alt="Kare-Kare">
+        <h3>Kare-Kare</h3>
+        <p>Rich peanut-based stew with oxtail, tripe, and fresh vegetables, served with bagoong.</p>
+      </div>
+    </div>
+    <div style="margin-top:1.5rem; text-align:center;">
+      <a href="food.html" class="btn-explore">Explore All Recipes</a>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h2>Get Started Cooking Today!</h2>
+    <p>Whether you’re a beginner or a seasoned cook, Food Hub PH provides you with authentic recipes that are simple to follow and delicious to enjoy.</p>
+    <p>Click the button below to browse our full collection of Filipino recipes and bring the taste of the Philippines to your kitchen.</p>
+    <div style="margin-top:1rem; text-align:center;">
+      <a href="food.html" class="btn-explore">View Recipes</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Food Hub PH. All rights reserved.<br/>
+    Bringing the flavors of the Philippines to your table.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
