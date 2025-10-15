@@ -12,10 +12,7 @@
     <div class="nav-bar">
       <div class="nav-left">
         <!-- Hamburger Icon -->
-        <button class="hamburger" id="hamburger">
-          ☰
-        </button>
-
+        <button class="hamburger" id="hamburger">☰</button>
         <nav>
           <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -32,6 +29,7 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="orange-banner">
     <div class="hero-text">
       <h1>Welcome to Food Hub PH</h1>
@@ -71,21 +69,42 @@
 
   <section class="food-section">
     <h2>Featured Dishes</h2>
-    <div class="food-gallery">
-      <div class="dish">
+    <div class="food-recipes">
+      <div class="recipe-card">
         <img src="Images/adobo.webp" alt="Adobo">
         <h3>Adobo</h3>
-        <p>Classic Filipino stew with tender meat marinated in soy sauce, vinegar, and garlic.</p>
+        <div class="recipe-content">
+          <p>A classic Filipino stew made with soy sauce, vinegar, garlic, and bay leaves. Best served with rice.</p>
+          <ul>
+            <li>Chicken or pork</li>
+            <li>Soy sauce, vinegar</li>
+            <li>Garlic, bay leaves, pepper</li>
+          </ul>
+        </div>
       </div>
-      <div class="dish">
+      <div class="recipe-card">
         <img src="Images/bulalo.webp" alt="Bulalo">
         <h3>Bulalo</h3>
-        <p>Hearty beef shank soup cooked until tender, served with corn and vegetables.</p>
+        <div class="recipe-content">
+          <p>Beef shank soup slowly simmered until tender, served with corn, cabbage, and bone marrow goodness.</p>
+          <ul>
+            <li>Beef shank, bone marrow</li>
+            <li>Corn, cabbage, onions</li>
+            <li>Fish sauce, pepper</li>
+          </ul>
+        </div>
       </div>
-      <div class="dish">
+      <div class="recipe-card">
         <img src="Images/Kare-Kare-Filipino-food.jpg" alt="Kare-Kare">
         <h3>Kare-Kare</h3>
-        <p>Rich peanut-based stew with oxtail, tripe, and fresh vegetables, served with bagoong.</p>
+        <div class="recipe-content">
+          <p>Rich and creamy peanut-based stew, traditionally made with oxtail and vegetables, served with bagoong (shrimp paste).</p>
+          <ul>
+            <li>Oxtail, tripe (optional)</li>
+            <li>Peanut butter, annatto</li>
+            <li>Eggplant, string beans, bok choy</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div style="margin-top:1.5rem; text-align:center;">
@@ -107,15 +126,9 @@
     Bringing the flavors of the Philippines to your table.</p>
   </footer>
 
-  <!-- JS -->
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  </script>
-</body>
+  <!-- External JS -->
+  <script src="script.js"></script>
+  </body>
 </html>
 
+  
